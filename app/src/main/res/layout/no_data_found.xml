@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/noDataFound">
+    android:backgroundTint="?attr/backgroundColor"
+    android:id="@+id/noDataFound"
+    tools:targetApi="lollipop">
 
     <TextView
 
@@ -13,6 +16,7 @@
         android:text="@string/no_data_found"
         android:fontFamily="@string/regular"
         android:layout_margin="8dp"
+        android:textColor="?attr/primaryTextColor"
         android:gravity="center"
         android:textStyle="italic"/>
 

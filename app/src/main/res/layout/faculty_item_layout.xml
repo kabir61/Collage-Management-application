@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:backgroundTint="?attr/cardViewBackground"
+    android:layout_margin="8dp"
+    tools:targetApi="lollipop">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,14 +29,14 @@
                     android:layout_height="wrap_content"
                     android:text="Md kabir Hossen"
                     android:textSize="@dimen/title_size"
-                    android:textColor="@color/text_Color"/>
+                    android:textColor="?attr/primaryTextColor"/>
                 <TextView
                     android:id="@+id/postTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Programmer"
                     android:textSize="@dimen/text_size2"
-                    android:textColor="@color/text_Color"/>
+                    android:textColor="?attr/primaryTextColor"/>
 
                 <TextView
                     android:id="@+id/mobileTV"
@@ -41,14 +44,14 @@
                     android:layout_height="wrap_content"
                     android:text="01787816000"
                     android:textSize="@dimen/text_size2"
-                    android:textColor="@color/text_Color"/>
+                    android:textColor="?attr/primaryTextColor"/>
                 <TextView
                     android:id="@+id/emailTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="kabirhossenbd1971@gmail.com"
                     android:textSize="14sp"
-                    android:textColor="@color/text_Color"/>
+                    android:textColor="?attr/primaryTextColor"/>
 
 
             </LinearLayout>

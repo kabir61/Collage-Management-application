@@ -3,17 +3,22 @@
 
     <item android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
+        android:titleCondensed="?attr/buttonColor"
         android:title="Home"/>
     <item android:id="@+id/navigation_notice"
         android:icon="@drawable/ic_notice"
+        android:titleCondensed="?attr/buttonColor"
         android:title="Newsfeed"/>
     <item android:id="@+id/navigation_gallery"
         android:icon="@drawable/ic_gallery"
+        android:titleCondensed="?attr/buttonColor"
         android:title="Gallery"/>
     <item android:id="@+id/navigation_faculty"
         android:icon="@drawable/ic_faculty"
+        android:titleCondensed="?attr/buttonColor"
         android:title="Faculty"/>
     <item android:id="@+id/navigation_about"
+        android:titleCondensed="?attr/buttonColor"
     android:icon="@drawable/ic_about"
     android:title="About"/>
 

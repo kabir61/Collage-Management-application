@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="?attr/backgroundColor"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/adminNameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Md kabir Hossen"
+                    android:textSize="@dimen/title_size"
+                    android:textColor="?attr/primaryTextColor"/>
+                <TextView
+                    android:id="@+id/adminPostTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programmer"
+                    android:textSize="@dimen/text_size2"
+                    android:textColor="?attr/primaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/adminMobileTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="01787816000"
+                    android:textSize="@dimen/text_size2"
+                    android:textColor="?attr/primaryTextColor"/>
+                <TextView
+                    android:id="@+id/adminEmailTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="kabirhossenbd1971@gmail.com"
+                    android:textSize="14sp"
+                    android:textColor="?attr/primaryTextColor"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/adminUpdateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="?attr/primaryTextColor"
+                    android:text="@string/update_info"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    />
+
+
+            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/adminUpdateImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/teacher"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="color" />
+    <attr name="cardViewBackground" format="color" />
+    <attr name="primaryTextColor" format="color" />
+    <attr name="secondaryTextColor" format="color"/>
+    <attr name="buttonColor" format="color"/>
+    <attr name="tintColor" format="color"/>
+    <attr name="shimmer_animation" format="color"/>
+</resources>

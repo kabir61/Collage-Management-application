@@ -3,11 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.faculty.FacultyFragment">
+    android:backgroundTint="?attr/backgroundColor"
+    tools:context=".user.ui.faculty.FacultyFragment"
+    tools:targetApi="lollipop">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:backgroundTint="?attr/cardViewBackground"
         android:background="#FBFAFA">
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:text="Telecommunication Technology"
                 android:gravity="center"
-                android:textColor="@color/text_Color"
+                android:textColor="?attr/primaryTextColor"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginTop="16sp"/>
@@ -26,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="6dp"
-                android:background="#000"/>
+                android:background="?attr/secondaryTextColor"/>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/tctDepartment"
                 android:layout_width="match_parent"
@@ -37,8 +40,8 @@
                 android:id="@+id/tctNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?attr/cardViewBackground"
                 android:visibility="gone"
-                android:background="#B6A9A9"
                 android:orientation="vertical">
                 <include layout="@layout/no_data_found"/>
             </LinearLayout>
@@ -48,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:text="Computer Science and Technology"
                 android:gravity="center"
-                android:textColor="@color/text_Color"
+                android:textColor="?attr/primaryTextColor"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginTop="16sp"/>
@@ -56,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="6dp"
-                android:background="#000"/>
+                android:background="?attr/secondaryTextColor"/>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/cstDepartment"
                 android:layout_width="match_parent"
@@ -68,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
-                android:background="#FBFAFA"
+                android:background="?attr/cardViewBackground"
                 android:orientation="vertical">
                 <include layout="@layout/no_data_found"/>
             </LinearLayout>
@@ -78,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:text=" Data Telecommunication and Networking"
                 android:gravity="center"
-                android:textColor="@color/text_Color"
+                android:textColor="?attr/primaryTextColor"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginTop="16sp"/>
@@ -86,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="6dp"
-                android:background="#000"/>
+                android:background="?attr/secondaryTextColor"/>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/dntDepartment"
                 android:layout_width="match_parent"
@@ -97,7 +100,7 @@
                 android:id="@+id/dntNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FBFAFA"
+                android:background="?attr/primaryTextColor"
                 android:visibility="gone"
                 android:orientation="vertical">
                 <include layout="@layout/no_data_found"/>

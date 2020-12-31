@@ -16,4 +16,44 @@
     <string name="update_info">Update Info</string>
     <string name="green_environment">Green Environment</string>
 
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Admin Panel</item>
+        <item>User Panel</item>
+    </string-array>
+
+
+    <string-array name="TCT">
+        <item>TCT</item>
+        <item>Tct 1st Year/1st shift</item>
+        <item>Tct 1st Year/2nd shift</item>
+        <item>Tct 2nd Year/1st shift</item>
+        <item>Tct 2nd Year/2nd shift</item>
+        <item>Tct 3rd Year/1st shift</item>
+        <item>Tct 3rd Year/2nd shift</item>
+        <item>Tct 4th Year/1st shift</item>
+        <item>Tct 4th Year/2nd shift</item>
+    </string-array>
+
+
+    //Admin Panel//
+
+    <string name="add_notice">Add Notice</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="upload_ebook">Upload Ebook</string>
+    <string name="delete_notice">Delete Notice</string>
+    <string name="select_image">Select Image</string>
+    <string name="up_notice">Upload Notice</string>
+    <string name="notice_title">Notice Title</string>
+    <string name="select_pdf">Select PDF</string>
+    <string name="pdf_title">PDF title</string>
+    <string name="no_file">No file</string>
+    <string name="update_faculty">Update Faculty</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="post">Post</string>
+    <string name="add_teacher">Add Teacher</string>
+    <string name="mobile">Mobile</string>
+
+
 </resources>

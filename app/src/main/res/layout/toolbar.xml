@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/buttonColor"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/updateProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20sp"
+            android:src="@drawable/teacher"/>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Md kabir Hossen"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2sp"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kabirhossenbd1971@gmail.com"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2sp"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

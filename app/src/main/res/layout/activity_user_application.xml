@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/backgroundColor"
+    tools:targetApi="lollipop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/cardViewBackground"
+        tools:context=".MainActivity">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:background="@color/design_default_color_primary"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            tools:ignore="MissingConstraints" />
+
+        <fragment
+            android:id="@+id/fragment_layout"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:navGraph="@navigation/mobile_navigation"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="BottomAppBar,MissingConstraints">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/buttonNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:menu="@menu/buttom_nav"
+                tools:targetApi="lollipop" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/cardViewBackground"
+            android:id="@+id/profileUpdate">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/buttonColor"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/updateProfile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10sp"
+                        android:src="@mipmap/ic_launcher_round"/>
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/profileName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Md kabir Hossen"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2sp"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/profileMail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="kabirhossenbd1971@gmail.com"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="2sp"
+                            android:textColor="?attr/primaryTextColor"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <include layout="@layout/main_drawer"/>
+    </LinearLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20sp">
+    android:backgroundTint="?attr/backgroundColor"
+    android:layout_margin="20sp"
+    tools:targetApi="lollipop">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +44,7 @@
                        android:layout_height="wrap_content"
                        android:text="Feni Computer Institute"
                        android:textSize="18sp"
-                       android:textColor="@color/text_Color"
+                       android:textColor="?attr/secondaryTextColor"
                        />
                    <LinearLayout
                        android:layout_width="match_parent"
@@ -52,7 +55,7 @@
                            android:layout_height="wrap_content"
                            android:text="Date: "
                            android:fontFamily="@string/light"
-                           android:textColor="@color/text_Color"
+                           android:textColor="?attr/secondaryTextColor"
                            android:textSize="14sp"/>
                    <TextView
                            android:id="@+id/date"
@@ -61,14 +64,14 @@
                            android:text="05 Nov 2020"
                            android:layout_marginHorizontal="5dp"
                            android:fontFamily="@string/light"
-                           android:textColor="@color/text_Color"
+                           android:textColor="?attr/secondaryTextColor"
                            android:textSize="14sp" />
                    <TextView
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:text="Time: "
                            android:fontFamily="@string/light"
-                           android:textColor="@color/text_Color"
+                           android:textColor="?attr/secondaryTextColor"
                            android:textSize="14sp"/>
                    <TextView
                            android:id="@+id/time"
@@ -76,7 +79,7 @@
                            android:layout_height="wrap_content"
                            android:text="06:00"
                            android:fontFamily="@string/light"
-                           android:textColor="@color/text_Color"
+                           android:textColor="?attr/secondaryTextColor"
                            android:textSize="14sp"/>
                    </LinearLayout>
                </LinearLayout>
@@ -91,7 +94,7 @@
                android:id="@+id/noticeTitle"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:textColor="@color/text_Color"
+               android:textColor="?attr/primaryTextColor"
                android:text="The fastest developer tool"
                android:textSize="17sp"
                android:layout_marginVertical="10dp" />
@@ -100,7 +103,6 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="10dp"
-               android:src="@drawable/student"
                android:scaleType="fitXY"/>
        </LinearLayout>
 

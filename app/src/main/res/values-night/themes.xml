@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.UserCollageApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="l">true</item>
+        <item name="backgroundColor">#121212</item>
+        <item name="cardViewBackground">#EB272626</item>
+        <item name="primaryTextColor">#FFFFFFFF</item>
+        <item name="secondaryTextColor">#B3FFFFFF</item>
+        <item name="buttonColor">#03A9F4</item>
+        <item name="tintColor">#3E3E3E</item>
+        <item name="shimmer_animation">#E4CBCB</item>
+        </style>
 </resources>

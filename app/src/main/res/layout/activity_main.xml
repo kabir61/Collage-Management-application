@@ -1,70 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.drawerlayout.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawerLayout"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
-        <fragment
-            android:id="@+id/fragment_layout"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:navGraph="@navigation/mobile_navigation" />
-
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bottomAppBar"
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_marginTop="20sp"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:src="@drawable/fci_header"
+       android:layout_gravity="center"/>
+        <TextView
+            android:layout_marginTop="10sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:fabCradleMargin="20dp"
-            app:fabCradleVerticalOffset="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:fabCradleRoundedCornerRadius="20dp"
-            app:fabAnimationMode="slide"
-            app:fabAlignmentMode="center"
-            tools:ignore="BottomAppBar,MissingConstraints">
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/buttonNavigation"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="16dp"
-                app:menu="@menu/buttom_nav"
-                android:layout_marginRight="10dp"
-                tools:targetApi="lollipop" />
+            android:text="Feni Computer Institute"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"/>
 
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:padding="16dp">
 
-        </com.google.android.material.bottomappbar.BottomAppBar>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobileNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:backgroundTint="?attr/tintColor"
+            android:textColorHint="@color/gray"
+            android:hint="Enter username"
+            tools:targetApi="lollipop"
+            tools:ignore="TextFields"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:backgroundTint="?attr/tintColor"
+            android:textColorHint="@color/gray"
+            android:hint="Enter password"
+            tools:targetApi="lollipop"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationView"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/dreawer_header"
-        app:itemTextAppearance="?android:attr/textAppearanceMedium"
-        app:menu="@menu/navigation_drawer" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:textColor="?attr/primaryTextColor"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2196F3"
+        android:textSize="20sp"
+         tools:targetApi="lollipop" />
 
-</androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
 
 
 
